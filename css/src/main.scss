@@ -434,11 +434,14 @@ header {
 		}
 
 		&.last {
-			text-align: right;
+			text-align: center;
+			padding: 20px 10px 40px;
 
 			@include respond-to( 768px ) {
+				text-align: right;
+				width: 40%;
 				padding-right: 70px;
-				margin-top: 10px;
+				margin: 20px 0 20px 5%;
 				border-left: 3px solid $teal;
 
 				img {
@@ -447,8 +450,11 @@ header {
 			}
 
 			@include respond-to( 1024px ) {
+				margin: 20px 0 20px 5%;
+				width: 44%;
+
 				img {
-					max-width: 60%;
+					max-width: 75%;
 				}
 			}
 		}
