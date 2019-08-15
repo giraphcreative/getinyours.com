@@ -76,11 +76,34 @@ header {
 }
 
 
-@include respond-to( 1150px ) {
-	.contact {
+.contact {
+	
+	@include respond-to( 840px ) {
 		position: absolute;
+		top: 200px;
+		right: 50px;
+		left: 50px;
+		padding: 20px !important;
+		background-color: rgba( white, .7 );
+		box-shadow: 0 0 20px rgba( black, .4 );
+
+		label {
+			display: block;
+
+			&.inline {
+				display: inline-block;
+			}
+		}
+
+		textarea {
+			height: 256px;
+		}
+	}
+
+	@include respond-to( 1150px ) {
 		top: 250px;
 		right: 50px;
+		left: auto;
 		width: 550px;
 		padding: 20px !important;
 		background-color: rgba( white, .7 );
@@ -97,6 +120,10 @@ header {
 		.half {
 			float: none;
 			width: auto;
+		}
+
+		textarea {
+			height: 100px;
 		}
 	}
 }
@@ -250,6 +277,7 @@ header {
 	@include respond-to( 600px ) {
 		width: 60%;
 		float: left;
+		margin-left: -20px;
 	}
 
 	@include respond-to( 768px ) {
