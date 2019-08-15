@@ -45,6 +45,7 @@ body {
 .bg-container {
 	box-shadow: 0 0 50px darken( $tan, 25% );
 	overflow: hidden;
+	position: relative;
 }
 
 
@@ -58,6 +59,47 @@ header {
 	}
 }
 
+
+.contact {
+	background-color: rgba( lighten( $grey-light, 25% ), .8 );
+	background-size: cover;
+
+	label {
+		display: block;
+		color: $grey-dark;
+
+		@include respond-to( 768px ) {
+			display: inline-block;
+			padding: 0 20px 0 0;
+		}
+	}
+}
+
+
+@include respond-to( 1150px ) {
+	.contact {
+		position: absolute;
+		top: 250px;
+		right: 50px;
+		width: 550px;
+		padding: 20px !important;
+		background-color: rgba( white, .7 );
+		box-shadow: 0 0 20px rgba( black, .4 );
+
+		label {
+			display: block;
+
+			&.inline {
+				display: inline-block;
+			}
+		}
+
+		.half {
+			float: none;
+			width: auto;
+		}
+	}
+}
 
 
 // wrap div
@@ -379,21 +421,6 @@ header {
 }
 
 
-.contact {
-	background: url(../img/bg-connect.jpg) center center no-repeat;
-	background-size: cover;
-
-	label {
-		display: block;
-
-		@include respond-to( 768px ) {
-			display: inline-block;
-			padding: 0 20px 0 0;
-		}
-	}
-}
-
-
 .ad {
 	@include respond-to( 1100px ) {
 		padding: 30px 40px;
@@ -421,6 +448,7 @@ header {
 	position: relative;
 	z-index: 9;
 	box-shadow: 0 0 30px rgba( black, .4 );
+	background: url(../img/bg-woodgrain.jpg);
 	
 	.half {
 		padding: 10px 0;
@@ -532,5 +560,10 @@ header {
 	background: rgba( white, .3 );
 	border-radius: 20px;
 	display: inline-block;
+}
+
+
+img.separator {
+	display: block;
 }
 

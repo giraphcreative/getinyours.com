@@ -3,7 +3,7 @@
 <head>
 	<title>Get In Your Element | Element FCU</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/main.css?v=2">
+	<link rel="stylesheet" href="css/main.css?v=3">
 	<script src="js/respond.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,8 +21,31 @@
 	<div class="bg-container group">
 	
 	<header>
-		<a href="https://www.elementfcu.org/" target="_blank"><img src="img/header.jpg" alt="Your Moments Matter"></a>
+		<a href="https://www.elementfcu.org/" target="_blank"><img src="img/header.jpg?v=1" alt="Your Moments Matter"></a>
 	</header>
+	
+	<div class="text-white pad contact">
+		<form id="contact" name="contact">
+			<strong><div class="error text-red"></div></strong>
+			<div class="group">
+				<div class="half">
+					<p><label>Your Name:
+						<input type="text" name="name" placeholder="Jane Smith" /></label></p>
+					<p><label>Your Email:
+						<input type="text" name="email" placeholder="jane@smith.com" /></label></p>
+					<p><label>Your Phone:
+						<input type="text" name="phone" placeholder="123-456-7890" /></label></p>
+					<p><label class="inline"><input type="radio" name="member" value="yes" /> Current member</label>
+						<label class="inline"><input type="radio" name="member" value="no" checked="checked" /> Not a member.. yet!</label></p>
+				</div>
+				<div class="half">
+					<p><label>Message:
+						<textarea name="message" placeholder="Your message."></textarea></label></p>
+				</div>
+			</div>
+			<p class="text-center"><input type="submit" name="submit" value="Submit" class="btn" /></p>
+		</form>
+	</div>
 		
 	<div class="intro pad">
 		<p>We're a little different, and so are our members. And you know what? We love it. Being on the cutting edge and innovating to solve your problems is part of who we are every day, so we look for reasons to say "yes" and help you live a better and more prosperous life here in Charleston.</p>
@@ -118,31 +141,8 @@
 		</div>
 
 	</div>				
-	
-	<div class="bg-purple pad title"><img src="img/title-connect.png" /></div>
 
-	<div class="text-white pad contact">
-		<form id="contact" name="contact">
-			<strong><div class="error text-red"></div></strong>
-			<div class="group">
-				<div class="half">
-					<p>Your Name:
-						<input type="text" name="name" placeholder="Jane Smith" /></p>
-					<p>Your Email:
-						<input type="text" name="email" placeholder="jane@smith.com" /></p>
-					<p>Your Phone:
-						<input type="text" name="phone" placeholder="123-456-7890" /></p>
-					<p><label><input type="radio" name="member" value="yes" /> Current member</label>
-						<label><input type="radio" name="member" value="no" checked="checked" /> Not a member.. yet!</label></p>
-				</div>
-				<div class="half">
-					<p>Message:
-						<textarea name="message" placeholder="Your message."></textarea></p>
-				</div>
-			</div>
-			<p class="text-center"><input type="submit" name="submit" value="Submit" class="btn" /></p>
-		</form>
-	</div>
+	<div class="bg-purple pad title title-contact"><img src="img/title-connect.png?v=1" /></div>
 
 	<div class="footer group">
 		<div class="half logo">
@@ -160,6 +160,8 @@
 		</div>
 
 	</div>
+
+	<img src="img/separator.jpg" class="separator">
 
 	<footer class="fineprint">
 		<img src="img/logo-housing.png" alt="Equal Housing Opportunity Logo">
