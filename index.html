@@ -15,6 +15,7 @@
 
 	gtag('config', 'UA-141667133-1');
 	</script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -25,8 +26,7 @@
 	</header>
 	
 	<div class="text-white pad contact">
-		<form id="contact" name="contact">
-			<strong><div class="error text-red"></div></strong>
+		<form id="contact" name="contact" action="send.php" method="post">
 			<div class="group">
 				<div class="half">
 					<p><label>Your Name:
@@ -41,6 +41,7 @@
 				<div class="half">
 					<p><label>Message:
 						<textarea name="message" placeholder="Your message."></textarea></label></p>
+					<div class="g-recaptcha" data-sitekey="6LcevcUUAAAAAOy8RAGODhwYEbSX_1ZzdV9nuzXA"></div>
 				</div>
 			</div>
 			<p class="text-center"><input type="submit" name="submit" value="Submit" class="btn" /></p>
@@ -172,5 +173,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js?v=3"></script>
+</script>
 </body>
 </html>
